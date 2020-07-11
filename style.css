@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width: 350px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    margin: 20px 0;
+}
+main{
+    border:1px solid #ccc;
+    padding: 10px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+section{
+    width: 340px;
+    height: 300px;
+    text-align: center;
+}
+section input{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    font-weight: bold;
+}
+input:focus{
+    outline:1px solid #ddd;
+}
+section button{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    background-color: #b3d2e8;
+    font-weight: bold;
+    font-size: 17px;
+    color:white;
+}
+section #bar{
+    margin-bottom: 10px;
+}
+section #bar hr{
+    width: 25%;
+    display:inline-block
+}
+section #bar .or{
+    width: 20%;
+    display:inline-block
+}
+#facebook span{
+    font-size: 18px;
+    font-weight: bold;
+}
+#facebook span a{
+    text-decoration: none;
+   color: #335b90;
+}
+footer{
+    width: 350px;
+    height: 80px;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 80px;
+}
+footer span:first-child{
+    font-size: 14px;    
+}
+footer span:last-child a{
+    font-size: 14px;
+    text-decoration: none;
+    color:#5e81e6;
+    font-weight: bold;
+}

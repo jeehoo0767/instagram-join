@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>instagram-login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <main>
+            <header>
+                <img src="logo.png" alt="a">
+            </header>
+            <section>
+                <form action="">
+                    <input type="text" placeholder="전화번호,사용자 이름 또는 이메일">
+                    <input type="password" placeholder="비밀번호">
+                    <button>로그인</button>
+                </form>
+                <div id="bar">
+                    <hr class="leftHr">
+                    <div class="or">또는</div>
+                    <hr class="rightHr">
+                </div>
+                <div id="facebook">
+                    <img src="facebook.png" alt="a" width="20px" height="20px">
+                    <span><a href="">Facebook으로 로그인</a></span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <span>계정이 없으신가요?</span> <span><a href="">가입하기</a></span>
+        </footer>
+    </div>
+    <script>
+        let inputTag = document.getElementsByTagName("input");
+        let buttonArray = document.getElementsByTagName("button");
+        
+        let inputId = inputTag[0];
+        let inputPassword = inputTag[1];
+        
+        let ordinaryButton = buttonArray[0];
+        let facebookLoginButton = buttonArray[1];
+    </script>
+</body></html>
+<!--https://velog.io/@devzunky/TIL-8%EC%9D%BC%EC%B0%A8-HTML-CSS-JavaScript-%EC%97%B0%EB%8F%99-%EC%98%88%EC%A0%9C-mek1gcwij5-->
