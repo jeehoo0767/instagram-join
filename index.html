@@ -17,7 +17,7 @@
                 <form action="">
                     <input type="text" placeholder="전화번호,사용자 이름 또는 이메일">
                     <input type="password" placeholder="비밀번호">
-                    <button>로그인</button>
+                    <button class="unactive">로그인</button>
                 </form>
                 <div id="bar">
                     <hr class="leftHr">
@@ -37,12 +37,26 @@
     <script>
         let inputTag = document.getElementsByTagName("input");
         let buttonArray = document.getElementsByTagName("button");
-        
+
         let inputId = inputTag[0];
         let inputPassword = inputTag[1];
-        
+
         let ordinaryButton = buttonArray[0];
         let facebookLoginButton = buttonArray[1];
+
+       inputPassword.addEventListener("keyup", () => {
+    if(inputId.value){
+        ordinaryButton.classList.remove("unactive");
+        ordinaryButton.classList.add("active");
+    }
+    if(!inputPassword.value){
+        ordinaryButton.classList.remove("active");
+        ordinaryButton.classList.add("unactive");
+    }
+}) 
+
     </script>
-</body></html>
+</body>
+
+</html>
 <!--https://velog.io/@devzunky/TIL-8%EC%9D%BC%EC%B0%A8-HTML-CSS-JavaScript-%EC%97%B0%EB%8F%99-%EC%98%88%EC%A0%9C-mek1gcwij5-->
